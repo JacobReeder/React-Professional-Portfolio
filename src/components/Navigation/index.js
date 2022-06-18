@@ -1,18 +1,13 @@
-import React from 'react'; 
+import React from 'react';
+import { capitalizeFirstLetter } from "../../utils/helpers"; 
 
-/**
- * 
- *  function categorySelected() {
- * }
- */
 
 function Navigation() {
 
-  /**
-   * Example array used to keep the code DRY instead of hardcoding navigation. 
-   * Explained in 20.3.3
-   * 
-   * const categories = [
+  /** Example array used to keep the code DRY instead of hardcoding navigation. 
+    Explained in 20.3.3 **/
+
+    const categories = [
   {
     name: "Project 1:", description: "",
   },
@@ -22,7 +17,10 @@ function Navigation() {
     description: "",
   },
 ];
-   */
+
+function handleClick() {
+   }
+   
 
     return (
 
@@ -35,13 +33,15 @@ function Navigation() {
   <nav>
     <ul className="flex-row">
       <li className="mx-2">
-        <a href="#about">
+        <a href="#about" onClick={() => handleClick()}>
           About Me          
         </a>
       </li>
       {/**Add Portfolio page link here */}
-      <li>
-        <span>Contact</span>
+      <li className={"mx-2"}>
+        <span onClick={() => handleClick()}>
+          Contact
+        </span>
       </li>
       {categories.map((category) => (
         <li
@@ -49,16 +49,16 @@ function Navigation() {
           key={category.name}
         >
         {/**May need to refactor every "category" variable//categoyry ties in with each project on project page? */} 
-          <span onClick={() => categorySelected(category.name)} >
-      {category.name}
-        </span>
+          <span onClick={() => { handleClick(); }}>
+            {capitalizeFirstLetter(category.name)}       
+         </span>
         </li>
-         ))}
-
-    </ul>
+        ))
+      }
+   </ul>
   </nav>
-       </header>
-    );
+  </header>
+  );
 }
 
 export default Navigation;
