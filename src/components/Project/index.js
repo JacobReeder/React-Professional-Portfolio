@@ -1,6 +1,11 @@
 import React from 'react'; 
 //import coverImage from "../../assets/cover/cover-image.jpg";  //Refactor this to include your projects
 
+/**
+ * 
+ * Is the "Project" component the equivalent of the "Gallery component in module 20 lesson 3?"
+ * 
+ */
 function Project() {
 
     return (
