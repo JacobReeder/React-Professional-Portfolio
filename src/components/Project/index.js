@@ -2,7 +2,7 @@ import React from 'react';
 import coverImage from "../../assets/cover/cover-image.jpg";  //Refactor this to include your projects
 
 /**
- * 
+ * This page is the equivalent of "portfolio" for the project requirements
  * Is the "Project" component the equivalent of the "Gallery component in module 20 lesson 3?"
  * 
  */
