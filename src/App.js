@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 
 import About from './components/About';
@@ -10,12 +10,29 @@ import Projects from './components/Project';
 import Resume from './components/Resume'
 
 function App() {
+
+  const [categories] = useState([
+    {
+      name: '',
+      description: '',
+    },
+    { name: '', description: '' },
+    { name: '', description: '' },
+    { name: '', description: '' },
+  ]);
+
+  const [currentCategory, setCurrentCategory] = useState(categories[0]);
+
   return (
     <div>
-      <Navigation></Navigation>
+      <Navigation
+        categories={categories}
+        setCurrentCategory={setCurrentCategory}
+        currentCategory={currentCategory}
+      ></Navigation>
       <main>
         <About></About>
-        <Projects></Projects>
+        <Projects currentCategory={currentCategory}></Projects>
         <Resume></Resume>
         <Contact></Contact>
       </main>
