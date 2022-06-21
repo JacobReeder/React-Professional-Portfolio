@@ -4,23 +4,23 @@ import './App.css';
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import Header from './components/Header';
+//import Header from './components/Header';
 import Navigation from './components/Navigation';
 import Project from './components/Project';
 import Resume from './components/Resume'
 
 function App() {
 
-  const [ currentPage, setCurrentPage ] = useState('about');
+  const [ currentPage, setCurrentPage ] = useState('About');
 
   const renderPage = () => {
-    if (currentPage === 'project') {
+    if (currentPage === 'Project') {
       return <Project />;
     }
-    if (currentPage === 'about') {
+    if (currentPage === 'About') {
       return <About />;
     }
-    if (currentPage === 'resume') {
+    if (currentPage === 'Resume') {
       return <Resume />
     }
     return <Contact />;    
@@ -29,16 +29,21 @@ function App() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
+    <div className='page-container'>
+      <header>
     <div>
-    <Header><Navigation currentPage={currentPage} handlePageChange={handlePageChange} /></Header>
-   
+      <a href='/'>Jacob Reeder</a>
+    <Navigation currentPage={currentPage} handlePageChange={handlePageChange}></Navigation>
+    </div>
+    </header>
+    <main>
+      <div className='main-wrap'>
     {renderPage()}
+    </div>
+    </main>
     <Footer></Footer>
   </div>
 
-
-
-   
   );
 }
   

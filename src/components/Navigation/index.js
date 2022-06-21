@@ -14,36 +14,37 @@ const Navigation = ({ currentPage, handlePageChange }) => {
       </a>
     </h2>
 
-    <Navigation>
-    <ul className="flex-row">
-          
-
+    <nav>
+     <ul class="Navigation"> 
+        <li>       
         <a href="#project"
-        onClick={() => handlePageChange('project')} 
-        className={currentPage === 'project' ? 'nav-link active' : 'nav-link'}>
+        onClick={() => handlePageChange('Project')} 
+        className={currentPage === 'Project' ? 'nav-link active' : 'nav-link'}>
         Projects</a>
+        </li>
  
        <li className="mx-2">
           <a href="#about" 
-            onClick={() => handlePageChange('about')} 
-            className={currentPage === 'about' ? 'nav-link active' : 'nav-link'}>
+            onClick={() => handlePageChange('About')} 
+            className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}>
             About
           </a>
         </li>
-
+        <li>
         <a href="#resume"
-        onClick={() => handlePageChange('resume')} 
-        className={currentPage === 'resume' ? 'nav-link active' : 'nav-link'}>
+        onClick={() => handlePageChange('Resume')} 
+        className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}>
         Resume
         </a>
-
+        </li>
+       <li>
         <a href="#contact"
-        onClick={() => handlePageChange('contact')} 
-        className={currentPage === 'contact' ? 'nav-link active' : 'nav-link'}>
+        onClick={() => handlePageChange('Contact')} 
+        className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}>
         Contact</a>
-     
-    </ul>
-    </Navigation>
+        </li>    
+      </ul>
+    </nav>
   </header>
   )
 }
