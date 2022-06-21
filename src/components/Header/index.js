@@ -4,9 +4,10 @@ function Header() {
 
     return (
 
-        <section>
-
-        </section>
+       <header>
+        <h1>Jacob Reeder</h1>
+        {/*props.children*/}
+       </header>
     );
 }
 

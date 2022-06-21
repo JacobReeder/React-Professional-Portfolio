@@ -21,17 +21,17 @@ function Contact() {
         <section>
               <h1 data-testid="h1tag">Contact me</h1>
       <form id="contact-form" onSubmit={handleSubmit}>
-        // name input
+       
         <div>
       <label htmlFor="name">Name:</label>
       <input type="text" defaultValue={name} onChange={handleChange} name="name" />
       </div>
-        // email input
+        
         <div>
         <label htmlFor="email">Email address:</label>
         <input type="email" defaultValue={email} name="email" onChange={handleChange} />
         </div>
-        // message text area
+        
         <div>
         <label htmlFor="message">Message:</label>
         <textarea name="message" defaultValue={message} onChange={handleChange} rows="5"  />
