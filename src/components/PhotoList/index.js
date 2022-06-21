@@ -2,33 +2,39 @@ import React, { useState } from 'react'
 
 
 
-function PhotoList({ category }) {
+const PhotoList = () => {
 
+  
   const [photos] = useState([
     {
       name: 'Counting Calz',
-      category: 'Projects',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+      url: '',
+      repo: '',
+      screenshot: ''
+     
     },
   ]);
     
-  const currentPhotos = photos.filter((photo) => photo.category === category);
-
   return (
-    <div>
-      <div className="flex-row">
-        {photos.map((image, i) => (
-          <img
-            src={require(`../../assets/Projects/${category}/${i}.png`).default}
-            alt={image.name}
-            className="img-thumbnail mx-1"
-            key={image.name}
-            
-          />
-        ))}
-      </div>
+    <>
+  {photos.map((projectMapped => {
+    return (
+    <div className='project-div-wrapper d-grid'>
+      <h2>{projectMapped.name}</h2>
+      <a href={projectMapped.url}>
+        <img
+          src={projectMapped.screenshot}
+          alt={projectMapped.name}
+          className="project-img"
+          key={projectMapped.name}
+        />
+      </a>
+      <a href={projectMapped.repo}>{projectMapped.name} </a>
     </div>
-  );
-};
+    )
+  }))}
+</>
+)
+}
 
-export default PhotoList;
+export default PhotoList; 

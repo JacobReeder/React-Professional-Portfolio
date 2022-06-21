@@ -6,9 +6,13 @@ function About() {
 
         <section className="my-5">
             <h1 id="about">
-                Currently attending the Full Stack Web Development
-                 Coding Bootcamp at UC Berkeley
+               About Me
             </h1>
+            <div className="my-2">
+                <p>
+                    UCB Coding Bootcamp
+                </p>
+            </div>
         </section>
     
     );
