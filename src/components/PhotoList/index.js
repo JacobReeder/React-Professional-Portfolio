@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+
 
 
 
@@ -8,9 +9,9 @@ const PhotoList = () => {
   const [photos] = useState([
     {
       name: 'Counting Calz',
-      url: '',
-      repo: '',
-      screenshot: ''
+      url: 'https://mysterious-spire-64686.herokuapp.com/',
+      repo: 'https://github.com/JacobReeder/Counting-Calz',
+      screenshot: 'https://github.com/JacobReeder/Counting-Calz/raw/main/public/images/Screenshot.png'
      
     },
   ]);
