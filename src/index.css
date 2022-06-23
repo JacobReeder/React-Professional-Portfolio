@@ -5,11 +5,11 @@ main {
   padding: 50px 30px;
 }
 :root {
-  --primary: #515052;
-  --secondary: #333138;
-  --tertiary: #FF312E;
-  --light: #FFFFFA;
-  --dark: #000103;
+  --primary: #7b7f81;
+  --secondary: #73787a;
+  --tertiary: #414344;
+  --light: #ececf5;
+  --dark: #0b0c0c;
   --darker: #111111;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
@@ -34,11 +34,13 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: .1em;
-  background: var(--secondary);
-  color: var(--primary);
+  background: var(--primary);
+  color: var(--dark);
   font-family: 'Poiret One';
 
 }
+
+
 
 h1,
 h2,
@@ -90,7 +92,7 @@ p {
 
 /** Text Link Styles **/
 a {
-  color: var(--tertiary);
+  color: var(--dark);
   text-decoration: none;
   font-weight: bold;
 }
@@ -105,8 +107,9 @@ header {
 }
 
 header a {
-  color: var(--primary);
+  color: var(--light);
 }
+
 
 /** Size of imported images **/
 img {
@@ -161,7 +164,6 @@ textarea {
 li {
   list-style: none;
 }
-
 
 /**/
 

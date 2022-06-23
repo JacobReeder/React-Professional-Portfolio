@@ -19,7 +19,7 @@ function Contact() {
   return (
 
         <section>
-              <h1 data-testid="h1tag">Contact me</h1>
+              <h1 data-testid="h1tag">Contact Me</h1>
       <form id="contact-form" onSubmit={handleSubmit}>
        
         <div>
@@ -29,7 +29,7 @@ function Contact() {
         
         <div>
         <label htmlFor="email">Email address:</label>
-        <input type="email" defaultValue={email} name="email" onChange={handleChange} />
+        <input type="email" defaultValue={email} onChange={handleChange} name="email"/>
         </div>
         
         <div>
