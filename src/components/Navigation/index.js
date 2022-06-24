@@ -1,51 +1,58 @@
 import React from 'react';
+import background from "../../assets/Projects/fog.jpg"
+
 
 
 
 const Navigation = ({ currentPage, handlePageChange }) => {
 
   return ( 
-
-  <header className="flex-row px-1">
+    <body>
+      
+  <header style={{ backgroundImage: `url(${background})` }}>
    <h2>
+   
+   <div>
+      
       <a data-testid="link" href="/">
-       {/*<span role="img"></span> */}
         React Portfolio
       </a>
+      </div>
     </h2>
 
     <nav>
-     <ul class="Navigation"> 
-        <li>       
-        <a href="#project"
-        onClick={() => handlePageChange('Project')} 
-        className={currentPage === 'Project' ? 'nav-link active' : 'nav-link'}>
-        Projects</a>
-        </li>
- 
-       <li className="mx-2">
-          <a href="#about" 
+     <ul class="navigation"> 
+       <li class="nav-style">        
+          <a href="#project"
+          onClick={() => handlePageChange('Project')} 
+          className={currentPage === 'Project' ? 'active-nav' : ''}>
+           Projects</a>
+       </li>  
+       <li class="nav-style">
+         <a href="#about" 
             onClick={() => handlePageChange('About')} 
             className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}>
             About
-          </a>
-        </li>
-        <li>
+         </a>
+       </li>
+        
+        
         <a href="#resume"
         onClick={() => handlePageChange('Resume')} 
         className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}>
         Resume
         </a>
-        </li>
-       <li>
+        
+       
         <a href="#contact"
         onClick={() => handlePageChange('Contact')} 
         className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}>
         Contact</a>
-        </li>    
+           
       </ul>
     </nav>
   </header>
+  </body>
   )
 }
 
