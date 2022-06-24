@@ -9,7 +9,10 @@ const Project = () => {
 
     return (
      <div>
+      <h1></h1>
        <PhotoList/>
+       
+       <h2></h2>
      </div>
        
     )
