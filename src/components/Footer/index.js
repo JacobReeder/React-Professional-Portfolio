@@ -4,9 +4,11 @@ function Footer() {
 
     return (
 
-        <section>
-
-        </section>
+        <footer className="footer" style={{position:"fixed"}}>
+            <p>GitHub Profile
+                <a href="https://github.com/JacobReeder"></a>
+            </p>
+        </footer>
     );
 }
 
