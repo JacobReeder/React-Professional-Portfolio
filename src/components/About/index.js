@@ -1,11 +1,15 @@
 import React from 'react'; 
+import background from "../../assets/Projects/fog.jpg"
+
+
 
 function About() {
 
     return (
-
-        <section className="my-5">
-            <h1 id="about">
+         <body>
+        <section className="about-section">
+            
+            <h1 id="about" style={{ backgroundImage: `url(${background})` }}>
                About Me
             </h1>
             <div className="my-2">
@@ -24,7 +28,9 @@ function About() {
                     work as a freelancer to add to my work experience. 
                 </p>
             </div>
+            
         </section>
+        </body>
     
     );
 }
