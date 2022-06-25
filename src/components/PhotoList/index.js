@@ -38,16 +38,16 @@ const PhotoList = () => {
     },
     {
       name: 'README.MD Generator',
-      url: 'https://drive.google.com/drive/folders/1EoMN4hxhqYt1YB9NTI0ghlDvfPKuptIM',
+      url: 'https://drive.google.com/file/d/1BpTRtz_8-BWdOUcvGdu-R2b86N5oaMO0/view?usp=sharing',
       repo: 'https://github.com/JacobReeder/Proffesional-Readme-Generator',
       screenshot: 'https://user-images.githubusercontent.com/97851357/175748966-b9c0a63b-6e2e-4e42-a1cc-d4ba4b16b850.png',
       clicklink: 'Click for README.MD Generator Repo'
     },
     {
-      name: '',
-      url: '',
-      repo: '',
-      screenshot: ''
+      name: 'Team Profile Generator',
+      url: 'https://drive.google.com/file/d/1D9FQcurw2_nTIjn64RoUrH-zCfGsYHQ2/view?usp=sharing',
+      repo: 'https://github.com/JacobReeder/Team-Profile-Generator',
+      screenshot: 'https://user-images.githubusercontent.com/97851357/175754375-551750af-7ee6-45b4-9564-9ebf800d9488.png'
     },
   ]);
     
@@ -62,7 +62,7 @@ const PhotoList = () => {
         <img
           src={projectMapped.screenshot}
           alt={projectMapped.name}
-          className="project-img"
+          className=""
           key={projectMapped.name}
         />
       </a>
