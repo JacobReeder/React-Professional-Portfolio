@@ -13,7 +13,8 @@ function About() {
                About Me
             </h1>
             <div className="my-2">
-                <p>
+               <li>
+                 <p>
                         Currently, I am attending the Fullstack Web Development 
                     Coding Bootcamp at UC Berkeley. My primary goal is to develop a new skill set,
                     and to accomplish this I seek to gain experience through certification programs. I've
@@ -27,6 +28,7 @@ function About() {
                     In the near future I hope to start a C/C++ certification program, as well as 
                     work as a freelancer to add to my work experience. 
                 </p>
+                </li>
             </div>
             
         </section>
