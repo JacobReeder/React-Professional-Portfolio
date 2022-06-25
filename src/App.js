@@ -29,7 +29,7 @@ function App() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <body>
+    
     <div>
       <header>
     <div>
@@ -44,7 +44,7 @@ function App() {
     </main>
     <Footer></Footer>
   </div>
-  </body>
+  
 
   );
 }

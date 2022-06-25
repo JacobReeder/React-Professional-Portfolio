@@ -22,13 +22,13 @@ const Navigation = ({ currentPage, handlePageChange }) => {
 
     <nav>
      <ul class="navigation"> 
-       <li class="nav-style">        
+       <li class="">        
           <a href="#project"
           onClick={() => handlePageChange('Project')} 
           className={currentPage === 'Project' ? 'active-nav' : ''}>
            Projects</a>
        </li>  
-       <li class="nav-style">
+       <li class="">
          <a href="#about" 
             onClick={() => handlePageChange('About')} 
             className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}>
