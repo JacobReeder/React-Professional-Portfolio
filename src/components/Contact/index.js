@@ -24,20 +24,27 @@ function Contact() {
       <form id="contact-form" onSubmit={handleSubmit}>
        
         <div>
-      <label htmlFor="name">Name:</label>
-      <input type="text" defaultValue={name} onChange={handleChange} name="name" />
-      </div>
-        
-        <div>
-        <label htmlFor="email">Email address:</label>
-        <input type="email" defaultValue={email} onChange={handleChange} name="email"/>
+          <ul>
+              <li><label htmlFor="name">Name:</label>
+               <input type="text" defaultValue={name} onChange={handleChange} name="name" /></li>
+           </ul>
         </div>
         
         <div>
+          <ul>
+        <li><label htmlFor="email">Email address:</label>
+        <input type="email" defaultValue={email} onChange={handleChange} name="email"/></li>
+        </ul>
+        </div>
+        
+        <div>
+       <ul>
         <label htmlFor="message">Message:</label>
         <textarea name="message" defaultValue={message} onChange={handleChange} rows="5"  />
+        </ul>
         </div>
         <button type="submit">Submit</button>
+        
       </form>
 
         </section>
