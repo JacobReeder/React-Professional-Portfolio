@@ -6,7 +6,7 @@ import background from "../../assets/Projects/fog.jpg"
 function About() {
 
     return (
-         <body>
+         
         <section className="about-section">
             
             <h1 id="about" style={{ backgroundImage: `url(${background})` }}>
@@ -30,7 +30,7 @@ function About() {
             </div>
             
         </section>
-        </body>
+        
     
     );
 }

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'; 
+import background from "../../assets/Projects/fog.jpg"
 
 function Contact() {
     
@@ -19,7 +20,7 @@ function Contact() {
   return (
 
         <section>
-              <h1 data-testid="h1tag">Contact Me</h1>
+              <h1 data-testid="h1tag" style={{ backgroundImage: `url(${background})` }}>Contact Me</h1>
       <form id="contact-form" onSubmit={handleSubmit}>
        
         <div>
