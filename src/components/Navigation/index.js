@@ -7,7 +7,7 @@ import background from "../../assets/Projects/fog.jpg"
 const Navigation = ({ currentPage, handlePageChange }) => {
 
   return ( 
-    <body>
+    
       
   <header style={{ backgroundImage: `url(${background})` }}>
    <h2>
@@ -21,14 +21,14 @@ const Navigation = ({ currentPage, handlePageChange }) => {
     </h2>
 
     <nav>
-     <ul class="navigation"> 
-       <li class="">        
+     <ul className="navigation"> 
+       <li>        
           <a href="#project"
           onClick={() => handlePageChange('Project')} 
-          className={currentPage === 'Project' ? 'active-nav' : ''}>
+          className={currentPage === 'Project' ? 'nav-link active' : 'nav-link'}>
            Projects</a>
        </li>  
-       <li class="">
+       <li>
          <a href="#about" 
             onClick={() => handlePageChange('About')} 
             className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}>
@@ -52,7 +52,7 @@ const Navigation = ({ currentPage, handlePageChange }) => {
       </ul>
     </nav>
   </header>
-  </body>
+  
   )
 }
 

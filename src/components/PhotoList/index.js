@@ -55,14 +55,13 @@ const PhotoList = () => {
     <>
   {photos.map((projectMapped => {
     return (
-    <div className=''>
+    <div>
       <h2>{projectMapped.name}</h2>
       <h3>
       <a href={projectMapped.url}>
         <img
           src={projectMapped.screenshot}
           alt={projectMapped.name}
-          className=""
           key={projectMapped.name}
         />
       </a>
