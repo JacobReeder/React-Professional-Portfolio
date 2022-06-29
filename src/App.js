@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import './App.css';
 
-
+import Navigation from './components/Navigation';
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import Navigation from './components/Navigation';
 import Project from './components/Project';
 import Resume from './components/Resume'
 

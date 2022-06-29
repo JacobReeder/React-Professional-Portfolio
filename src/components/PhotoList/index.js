@@ -20,28 +20,28 @@ const PhotoList = () => {
       url: ' https://mighty-temple-15168.herokuapp.com/',
       repo: 'https://github.com/JacobReeder/pwa-budget-tracker',
       screenshot: 'https://user-images.githubusercontent.com/97851357/175190935-5d004a28-bc3f-478b-9fcf-c52bbe9692d2.png',
-      clicklink: 'Click for Budget Tracker Repo'
+      /*clicklink: 'Click for Budget Tracker Repo'*/
     },
     {
       name: 'PIZZA HUNT',
       url: 'https://powerful-sea-43648.herokuapp.com/',
       repo: 'https://github.com/JacobReeder/pizza-hunt',
       screenshot: 'https://user-images.githubusercontent.com/97851357/175192121-d73d1618-3965-43a5-aa10-7d4ff36ac83b.png',
-      clicklink: 'Click for Pizza Hunt Repo'
+      /*clicklink: 'Click for Pizza Hunt Repo'*/
     },
     {
       name: 'Social Networking API',
       url: 'https://drive.google.com/file/d/1ND8sTkCidcdJPcdw66qGEDRPhqL02lKO/view?usp=sharing',
       repo: 'https://github.com/JacobReeder/Social-Network-API',
       screenshot: 'https://user-images.githubusercontent.com/97851357/175201576-c84cc7d8-f88e-4c5b-b0c3-bc928ccbee8a.png',
-      clicklink: 'Clck for Social Network Repo'
+      /*clicklink: 'Clck for Social Network Repo'*/
     },
     {
       name: 'README.MD Generator',
       url: 'https://drive.google.com/file/d/1BpTRtz_8-BWdOUcvGdu-R2b86N5oaMO0/view?usp=sharing',
       repo: 'https://github.com/JacobReeder/Proffesional-Readme-Generator',
       screenshot: 'https://user-images.githubusercontent.com/97851357/175748966-b9c0a63b-6e2e-4e42-a1cc-d4ba4b16b850.png',
-      clicklink: 'Click for README.MD Generator Repo'
+      /*clicklink: 'Click for README.MD Generator Repo'*/
     },
     {
       name: 'Team Profile Generator',
@@ -66,7 +66,7 @@ const PhotoList = () => {
         />
       </a>
       </h3>
-      <a href={projectMapped.repo}>{projectMapped.clicklink} </a>
+      <a href={projectMapped.repo}>{projectMapped.name} </a>
       
     </div>
     )
