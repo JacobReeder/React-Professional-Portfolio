@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.dfc5872a.css",
-    "main.js": "/react-gh-pages/static/js/main.1e145a95.js",
-    "static/js/787.aeca62f9.chunk.js": "/react-gh-pages/static/js/787.aeca62f9.chunk.js",
-    "static/media/fog.jpg": "/react-gh-pages/static/media/fog.9eb4dc3caf0c01665fb3.jpg",
-    "index.html": "/react-gh-pages/index.html",
-    "main.dfc5872a.css.map": "/react-gh-pages/static/css/main.dfc5872a.css.map",
-    "main.1e145a95.js.map": "/react-gh-pages/static/js/main.1e145a95.js.map",
-    "787.aeca62f9.chunk.js.map": "/react-gh-pages/static/js/787.aeca62f9.chunk.js.map"
+    "main.css": "/React-Professional-Portfolio/static/css/main.dfc5872a.css",
+    "main.js": "/React-Professional-Portfolio/static/js/main.e30d3008.js",
+    "static/js/787.aeca62f9.chunk.js": "/React-Professional-Portfolio/static/js/787.aeca62f9.chunk.js",
+    "static/media/fog.jpg": "/React-Professional-Portfolio/static/media/fog.9eb4dc3caf0c01665fb3.jpg",
+    "index.html": "/React-Professional-Portfolio/index.html",
+    "main.dfc5872a.css.map": "/React-Professional-Portfolio/static/css/main.dfc5872a.css.map",
+    "main.e30d3008.js.map": "/React-Professional-Portfolio/static/js/main.e30d3008.js.map",
+    "787.aeca62f9.chunk.js.map": "/React-Professional-Portfolio/static/js/787.aeca62f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dfc5872a.css",
-    "static/js/main.1e145a95.js"
+    "static/js/main.e30d3008.js"
   ]
 }
